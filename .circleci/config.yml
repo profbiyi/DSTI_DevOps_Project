@@ -1,7 +1,29 @@
+# version: 2.1
+
+# orbs:
+#   python: circleci/python@0.2.1
+
+# jobs:
+#   build-and-test:
+#     executor: python/default
+#     steps:
+#       - checkout
+#       - python/load-cache
+#       - python/install-deps
+#       - python/save-cache
+#       - run:
+#           command: python ./src/test.py
+#           name: Test
+
+# workflows:
+#   main:
+#     jobs:
+#       - build-and-test
+
 version: 2.1
 
 orbs:
-  python: circleci/python@0.2.1
+  python: circleci/python@0.21
 
 jobs:
   build-and-test:
@@ -10,12 +32,26 @@ jobs:
       - checkout
       - python/load-cache
       - python/install-deps
-      - python/save-cache
+
       - run:
-          command: python ./src/test.py
+          command: ./src/test.py
           name: Test
+
+  deploy:
+    steps:
+      - checkout
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
 
 workflows:
   main:
     jobs:
       - build-and-test
+      - deploy:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only: master
