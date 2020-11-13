@@ -4,6 +4,7 @@ Flask==1.1.2
 flask-marshmallow==0.14.0
 Flask-RESTful==0.3.8
 Flask-SQLAlchemy==2.4.4
+marshmallow-sqlalchemy
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
