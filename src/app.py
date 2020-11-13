@@ -121,4 +121,5 @@ api.add_resource(BaseManager, '/')
 api.add_resource(UserManager, '/api/users')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run()
