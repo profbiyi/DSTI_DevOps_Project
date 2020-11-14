@@ -49,6 +49,7 @@ class BaseManager(Resource):
                     mimetype='application/json')
 
 
+
 class UserManager(Resource):
     @staticmethod
     def get():
@@ -73,7 +74,7 @@ class UserManager(Resource):
         db.session.add(user)
         db.session.commit()
         return jsonify({
-            'Message': f'User {first_name} {last_name} inserted.'
+            'Message': f'User {first_name} {last_name} successfully inserted.'
         })
 
     @staticmethod
@@ -98,7 +99,7 @@ class UserManager(Resource):
 
         db.session.commit()
         return jsonify({
-            'Message': f'User {first_name} {last_name} altered.'
+            'Message': f'User {first_name} {last_name} succeefully altered.'
         })
 
     @staticmethod
@@ -113,7 +114,7 @@ class UserManager(Resource):
         db.session.commit()
 
         return jsonify({
-            'Message': f'User {str(id)} deleted.'
+            'Message': f'User {str(id)} successfully deleted.'
         })
 
 

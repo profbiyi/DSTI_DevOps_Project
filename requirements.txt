@@ -4,11 +4,12 @@ Flask==1.1.2
 flask-marshmallow==0.14.0
 Flask-RESTful==0.3.8
 Flask-SQLAlchemy==2.4.4
-marshmallow-sqlalchemy
+gunicorn==20.0.4
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 marshmallow==3.9.1
+marshmallow-sqlalchemy==0.24.0
 mysqlclient==2.0.1
 pytz==2020.4
 six==1.15.0
