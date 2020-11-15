@@ -1,0 +1,7 @@
+version: "3"
+services: 
+    myapp:
+        image: profbiyi/mydstistudents_crud_api
+        ports:
+            - "5001:5000"
+            - "3306:3306"
