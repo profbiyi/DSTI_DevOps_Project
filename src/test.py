@@ -14,17 +14,20 @@ class FlaskTest (unittest.TestCase):
         statuscode = response.status_code
         self.assertEqual(statuscode, 200)
 
+        #check for response 200 on api/users
     def test_user_routes(self):
         tester = app.test_client(self)
         response = tester.get("/api/users")
         statuscode = response.status_code
         self.assertEqual(statuscode, 200)
     
+    #check if item return is json 
     def test_user(self):  
         tester = app.test_client(self)
         response = tester.get("/api/users")
         self.assertEqual(response.content_type, "application/json")
 
+    #check content of entry page
     def test_index_data(self):
         tester = app.test_client(self)
         response = tester.get("/")
