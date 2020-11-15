@@ -22,8 +22,15 @@ This project is strictly about devops and it has different part. Each part has t
 ├    └─── minikube_start.PNG
 ├    └─── minikube_status.PNG
 ├
-└───istio
-    └───__pycache__
+├───istio
+├
+├───gitignore
+├───gitattributes
+├───Procfile
+├───README.md
+├───requirements.txt
+└───runtime
+    
 
 ...
 ```
