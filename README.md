@@ -37,7 +37,7 @@ This project is strictly about devops and it has different part. Each part has t
 ├───requirements.txt
 └───runtime
 
-...
+ ```
 
 
 ### 1. Python Create, Read, Update and Delete (CRUD) API
