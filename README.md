@@ -11,6 +11,12 @@ This project is strictly about devops and it has different part. Each part has t
 ├───src
 ├     └─── appy.py
 ├     └─── test.py
+├     └─── README.md
+├     └─── images
+├               └─── post.PNG
+├               └─── post2.PNG
+├               └─── get_1.PNG
+├               └─── get_all.PNG
 ├
 ├───docker_docker_compose
 ├                        └─── Dockerfile
@@ -30,7 +36,7 @@ This project is strictly about devops and it has different part. Each part has t
 ├───README.md
 ├───requirements.txt
 └───runtime
-    
+
 ...
 
 
