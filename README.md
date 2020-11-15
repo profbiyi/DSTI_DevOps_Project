@@ -31,9 +31,8 @@ This project is strictly about devops and it has different part. Each part has t
 ├───requirements.txt
 └───runtime
     
-
 ...
-```
+
 
 ### 1. Python Create, Read, Update and Delete (CRUD) API
 A simple crud api built with (flask) python and mysql database. Initially, A docker image for mysql was used and port 3307 was opened.
