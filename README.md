@@ -62,14 +62,10 @@ A docker image was created, tagged and successfully hosted on [profbiyi/mydstist
 ### 4. Kubernetes
 
 1. Install Kubernetes cluster using Minikube
-2. Create a Kubernetes Manifest yaml files:
-  - deployments
-  - services
+2. Two files were created for deployment and services
+  - deployments with three pods - `flask_api-deployment.yml`
+  - services - `flask_k8_service.yml`
+3. 
 
-### 5. Make a service mesh using Istio
-
-1. Deploy your application using Istio
-2. Create configuration:
-  - route requests between 2 different versions of your app
-  - traffic shifting between 2 different versions of your app
+### 5.  Istio
 
