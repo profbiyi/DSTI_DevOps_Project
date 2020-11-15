@@ -5,7 +5,7 @@ This project is strictly about devops and it has different part. Each part has t
  ## Project Structure
 
  ```
- 
+
 ├───.circleci
 ├           └─── config.yml
 ├───src
@@ -30,14 +30,14 @@ This project is strictly about devops and it has different part. Each part has t
 
 ### 1. Python Create, Read, Update and Delete (CRUD) API
 A simple crud api built with (flask) python and mysql database. Initially, A docker image for mysql was used and port 3307 was opened.
-But later an online free mysql database was provisioned using [this list](https://remotemysql.com/).
+But later an online free mysql database was provisioned using (https://remotemysql.com/).
 
 
 ### 2. CI/CD pipeline with CircleCI and Heroku
 
-CI was configure with circleci [this list](https://app.circleci.com/pipelines/github/profbiyi). and CD with Heroku [this list](https://dashboard.heroku.com/pipelines/2e419849-9de8-42c0-b07e-13eb980d4f27/). I went for this option as it gives me an opportunity to test out different tools. 
+CI was configure with circleci (https://app.circleci.com/pipelines/github/profbiyi). and CD with Heroku (https://dashboard.heroku.com/pipelines/2e419849-9de8-42c0-b07e-13eb980d4f27/). I went for this option as it gives me an opportunity to test out different tools. 
 
-The home page of this api [this list](https://dstistudents.herokuapp.com/)
+The home page of this api (https://dstistudents.herokuapp.com/)
 
 
 
